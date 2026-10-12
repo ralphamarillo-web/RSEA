@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f6f4ef">
+  <meta name="description" content="The people and pets closest to me.">
+  <title>My Family | RSEA</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="achievements.html">Achievements</a>
+    <a href="projects.html">Family</a>
+    <a href="growth.html">Growth</a>
+  </nav>
+
+  <main>
+    <h1>My Family</h1>
+
+    <select id="filter">
+      <option value="All">All</option>
+      <option value="Parents">Parents</option>
+      <option value="Grandparents">Grandparents</option>
+      <option value="Siblings">Siblings</option>
+      <option value="Pets">Pets</option>
+    </select>
+
+    <div class="grid" id="family-list">
+
+      <div class="card" data-relation="Parents">
+        <div class="photo">
+          <img loading="lazy" src="images/family/parent-1.jpg" alt="Parent" onerror="this.style.display='none'">
+        </div>
+        <h3>Daddy</h3>
+        <span class="tag">Father</span>
+      </div>
+
+      <div class="card" data-relation="Parents">
+        <div class="photo">
+          <img loading="lazy" src="images/family/parent-2.jpg" alt="Parent" onerror="this.style.display='none'">
+        </div>
+        <h3>Mommy</h3>
+        <span class="tag">Mother</span>
+      </div>
+
+      <div class="card" data-relation="Grandparents">
+        <div class="photo">
+          <img loading="lazy" src="images/family/grandparent-1.jpg" alt="Grandmother" onerror="this.style.display='none'">
+        </div>
+        <h3>Mama Emma</h3>
+        <span class="tag">Grandmother</span>
+      </div>
+
+      <div class="card" data-relation="Grandparents">
+        <div class="photo">
+          <img loading="lazy" src="images/family/grandparent-2.jpg" alt="Grandmother" onerror="this.style.display='none'">
+        </div>
+        <h3>Mommy Indang</h3>
+        <span class="tag">Grandmother</span>
+      </div>
+
+      <div class="card" data-relation="Grandparents">
+        <div class="photo">
+          <img loading="lazy" src="images/family/grandparent-3.jpg" alt="Papa Dante" onerror="this.style.display='none'">
+        </div>
+        <h3>Papa Dante</h3>
+        <span class="tag">Grandfather</span>
+      </div>
+
+      <div class="card" data-relation="Siblings">
+        <div class="photo">
+          <img loading="lazy" src="images/family/sibling-1.jpg" alt="Sibling" onerror="this.style.display='none'">
+        </div>
+        <h3>Howey</h3>
+        <span class="tag">Siblings</span>
+      </div>
+
+      <div class="card" data-relation="Siblings">
+        <div class="photo">
+          <img loading="lazy" src="images/family/sibling-2.jpg" alt="Sibling" onerror="this.style.display='none'">
+        </div>
+        <h3>Vimvims</h3>
+        <span class="tag">Siblings</span>
+      </div>
+
+      <div class="card" data-relation="Siblings">
+        <div class="photo">
+          <img loading="lazy" src="images/family/sibling-3.jpg" alt="Sibling" onerror="this.style.display='none'">
+        </div>
+        <h3>Denden</h3>
+        <span class="tag">Siblings</span>
+      </div>
+
+      <div class="card" data-relation="Pets">
+        <div class="photo">
+          <img loading="lazy" src="images/family/pet-1.jpg" alt="Pet" onerror="this.style.display='none'">
+        </div>
+        <h3>Tasha</h3>
+        <span class="tag">Pets</span>
+      </div>
+
+      <div class="card" data-relation="Pets">
+        <div class="photo">
+          <img loading="lazy" src="images/family/pet-2.jpg" alt="Pet" onerror="this.style.display='none'">
+        </div>
+        <h3>Jaz</h3>
+        <span class="tag">Pets</span>
+      </div>
+
+      <div class="card" data-relation="Pets">
+        <div class="photo">
+          <img loading="lazy" src="images/family/pet-3.jpg" alt="Pet" onerror="this.style.display='none'">
+        </div>
+        <h3>Bugz</h3>
+        <span class="tag">Pets</span>
+      </div>
+
+    </div>
+
+    <p id="no-result" class="hidden">Nobody in this group yet.</p>
+
+    <div class="page-nav">
+      <a class="btn prev" href="achievements.html">&larr; Achievements</a>
+      <a class="btn next" href="growth.html">Growth &rarr;</a>
+    </div>
+  </main>
+
+  <footer>RSEA</footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f6f4ef">
+  <meta name="description" content="A personal portfolio by Ralph Stephen Escasa Amarillo.">
+  <title>RSEA | Personal Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="achievements.html">Achievements</a>
+    <a href="projects.html">Family</a>
+    <a href="growth.html">Growth</a>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="photo round">
+        <img src="images/profile.png" alt="My profile picture" onerror="this.style.display='none'">
+      </div>
+
+      <h1 id="rsea-title">RSEA</h1>
+
+      <div id="rsea-meaning" class="hidden">
+        <p><b>R</b> = Ralph</p>
+        <p><b>S</b> = Stephen</p>
+        <p><b>E</b> = Escasa</p>
+        <p><b>A</b> = Amarillo</p>
+      </div>
+
+      <p>Hi, I'm a BSIT student at National University Manila.</p>
+      <p>This website is about me: what I like, what I've done, and how I'm growing.</p>
+    </section>
+
+    <section class="email-box">
+      <h2>Subscribe for future changes!</h2>
+      <p>Enter your email to get updates when I add new stuff.</p>
+      <form id="subscribe-form" novalidate>
+        <label class="visually-hidden" for="email">Email address</label>
+        <input type="email" id="email" placeholder="you@example.com" autocomplete="email" required aria-describedby="form-msg">
+        <button type="submit">Subscribe</button>
+        <small class="form-msg" id="form-msg" role="status" aria-live="polite"></small>
+      </form>
+      <div class="saved-box" id="saved-box" hidden>
+        <p>Saved on this device: <strong id="saved-email"></strong></p>
+        <button class="remove-email" id="remove-email" type="button">Remove saved email</button>
+      </div>
+    </section>
+
+    <div class="page-nav">
+      <a class="btn next" href="about.html">About Me &rarr;</a>
+    </div>
+  </main>
+
+  <footer>RSEA</footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
